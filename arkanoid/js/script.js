@@ -29,8 +29,6 @@ for (var c = 0; c < kirCol; c++) {
 
 var score = 0;
 
-
-
 function drowScore() {
 	ctx.font = "18px Arial";
 	ctx.fillStyle = "#000";
@@ -51,6 +49,13 @@ function keyUp(e) {
 	} else if (e.keyCode == 37) {
 		leftBtn = false;
 	}	
+}
+
+function mouseMove(e) {
+	var relX = e.clientX - canvas.offsetLeft;
+	if (relX > 0 && relX < canvas.width) {
+		palX = relX - palW / 2;
+	}
 }
 
 function drawKir() {
@@ -96,7 +101,6 @@ function kirDetected() {
 					dy = -dy;
 					det.status = 0;
 					score++;
-
 					if (score == kirRow * kirCol) {
 						alert("YOU WIN!");
 						document.location.reload();
@@ -116,7 +120,6 @@ function draw() {
 	kirDetected();
 	x += dx;
 	y += dy;
-
 	
 	if (x + dx > canvas.width - rBall || x + dx < rBall) {
 		dx = -dx;
@@ -128,6 +131,7 @@ function draw() {
 		if (x > palX && x < palX + palW) {
 		dy = -dy; 
 		} else {
+			alert("The End!");
 			document.location.reload();
 		}
 	}
@@ -145,6 +149,7 @@ function draw() {
 
 document.addEventListener("keydown", keyDown, false);
 document.addEventListener("keyup", keyUp, false);
+document.addEventListener("mousemove", mouseMove, false);
 
 draw();
 
