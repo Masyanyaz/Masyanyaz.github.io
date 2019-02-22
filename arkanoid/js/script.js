@@ -268,7 +268,7 @@ function draw() {
 document.addEventListener("keydown", keyDown, false);
 document.addEventListener("keyup", keyUp, false);
 document.addEventListener("mousemove", mouseMove, false);
-document.addEventListener("ontouchend", onTouchEnd, false);
+document.addEventListener("touchmove", onTouchEnd, false);
 
 drawStatic();
 
