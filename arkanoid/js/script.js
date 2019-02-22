@@ -7,9 +7,11 @@ var dx = 4;
 var dy = -3;
 var rBall = 5;
 
+var menu = 200;
+
 var palH = 10;
 var palW = 75;
-var palX = (canvas.width - palW) / 2;
+var palX = (canvas.width - menu - palW) / 2;
 var palY = canvas.height - 60;
 
 var leftBtn = false;
@@ -29,10 +31,58 @@ for (var c = 0; c < kirCol; c++) {
 
 var score = 0;
 
-function drowScore() {
+var start = false;
+var end = false;
+var win = false;
+
+document.querySelector('#canvas').onclick = function(e) {
+	e = event || window.event;
+
+	if (start == false) {
+		if (e.offsetX > 450 && e.offsetX < 550 && e.offsetY > 50 && e.offsetY < 80) {
+			draw();
+		}
+	}
+
+	if (e.offsetX > 450 && e.offsetX < 550 && e.offsetY > 100 && e.offsetY < 130) {
+		localStorage.removeItem("maxScore");
+	}
+
+	if (end == true) {
+		if (e.offsetX > 150 && e.offsetX < 250 && e.offsetY > 310 && e.offsetY < 340) {
+			window.location.reload();
+		};
+	}
+
+}
+
+function drawBtn() {
+	ctx.beginPath();
+	ctx.rect(450, 50, 100, 30);
+	ctx.rect(450, 100, 100, 30);
+	ctx.moveTo(400, 0);
+	ctx.lineTo(400, 600);
+	ctx.fillStyle = "#f0f0f0";
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
 	ctx.font = "18px Arial";
 	ctx.fillStyle = "#000";
-	ctx.fillText ("Score: " + score, 315, 585);
+	ctx.fillText ("Start", 478, 72);
+	ctx.fillText ("Reset", 475, 122);
+	ctx.closePath();
+	
+}
+
+function drawScore() {
+	ctx.font = "18px Arial";
+	ctx.fillStyle = "#000";
+	ctx.fillText ("Score: " + score, 310, 585);
+	ctx.fillText ("Max score: " + localStorage.getItem("maxScore"), 10, 585);
+	ctx.fill();
+
 }
 
 function keyDown(e) {
@@ -53,7 +103,13 @@ function keyUp(e) {
 
 function mouseMove(e) {
 	var relX = e.clientX - canvas.offsetLeft;
-	if (relX > 0 && relX < canvas.width) {
+	if (relX > palW / 2 && relX < canvas.width - menu - palW / 2) {
+		palX = relX - palW / 2;
+	}
+}
+function onTouchEnd(e) {
+	var relX = e.clientX - canvas.offsetLeft;
+	if (relX > palW / 2 && relX < canvas.width - menu - palW / 2) {
 		palX = relX - palW / 2;
 	}
 }
@@ -66,11 +122,8 @@ function drawKir() {
 				var kirY = (r * (kirH + 5)) + 10;
 				kir[c][r].x = kirX;
 				kir[c][r].y = kirY;
-				ctx.beginPath();
-				ctx.rect(kirX, kirY, kirW, kirH);
 				ctx.fillStyle = "#00a";
-				ctx.fill();
-				ctx.closePath();
+				ctx.fillRect(kirX, kirY, kirW, kirH);
 			}
 		}
 	}
@@ -97,13 +150,14 @@ function kirDetected() {
 		for (var r = 0; r < kirRow; r++) {
 			var det = kir[c][r];
 			if (det.status == 1) {
-				if (x - rBall > det.x && x -rBall < det.x + kirW && y - rBall > det.y && y - rBall < det.y + kirH) {
+				if (x - rBall >= det.x && x - rBall <= det.x + kirW && y - rBall >= det.y && y - rBall <= det.y + kirH) {
 					dy = -dy;
 					det.status = 0;
 					score++;
 					if (score == kirRow * kirCol) {
-						alert("YOU WIN!");
-						document.location.reload();
+						drawWin();
+						win = true;
+						end = true;
 					}
 				}
 			}
@@ -111,45 +165,114 @@ function kirDetected() {
 	}
 }
 
-function draw() {
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
+function drawStatic() {
+	drawBtn();
 	drawKir();
-	drawBall();
 	drawPal();
-	drowScore();
-	kirDetected();
-	x += dx;
-	y += dy;
-	
-	if (x + dx > canvas.width - rBall || x + dx < rBall) {
-		dx = -dx;
-	}
 
-	if (y + dy < rBall) {
-		dy = -dy;
-	} else if (y + dy > palY - rBall) {
-		if (x > palX && x < palX + palW) {
-		dy = -dy; 
-		} else {
-			alert("The End!");
-			document.location.reload();
+}
+
+function drawWin() {
+	ctx.beginPath();
+	ctx.fillStyle = "#f0f0f0";
+	ctx.rect(100, 250, 200, 100);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.fillStyle = "#f0f0f0";
+	ctx.rect(150, 310, 100, 30);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.font = "18px Arial";
+	ctx.fillStyle = "#000";
+	ctx.fillText ("Congratulations!", 135, 275);
+	ctx.fillText ("Score: " + score, 169, 300);
+	ctx.fillText ("Restart", 170, 331);
+	ctx.closePath();
+}
+
+function drawEnd() {
+	ctx.beginPath();
+	ctx.fillStyle = "#f0f0f0";
+	ctx.rect(100, 250, 200, 100);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.fillStyle = "#f0f0f0";
+	ctx.rect(150, 310, 100, 30);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.font = "18px Arial";
+	ctx.fillStyle = "#000";
+	ctx.fillText ("The End!", 165, 275);
+	ctx.fillText ("Score: " + score, 169, 300);
+	ctx.fillText ("Restart", 170, 331);
+	ctx.closePath();
+}
+
+function draw() {
+	start = true;
+	if (win == false) {
+		ctx.clearRect(0, 0, canvas.width - menu, canvas.height);
+		drawKir();
+		drawBall();
+		drawPal();
+		drawScore();
+		kirDetected();
+		x += dx;
+		y += dy;
+		
+		if (x + dx > canvas.width - menu - rBall || x + dx < rBall) {
+			dx = -dx;
 		}
+
+		if (y + dy < rBall) {
+			dy = -dy;
+		} else if (y + dy > palY - rBall) {
+			if (x > palX && x < palX + palW) {
+			dy = -dy; 
+			} else {
+				drawEnd();
+				end = true;
+				return;
+			}
+		}
+
+		if (localStorage.getItem("maxScore") <= score) {
+			localStorage.setItem("maxScore", score);
+		}
+		
+		if (rightBtn && palX < canvas.width - menu - 3 - palW) {
+			palX += 5;
+		}
+
+		if (leftBtn && palX > 0) {
+			palX -= 5;
+		}
+		
+		requestAnimationFrame(draw);
 	}
 
-	if (rightBtn && palX < canvas.width - palW) {
-		palX += 4;
-	}
-
-	if (leftBtn && palX > 0) {
-		palX -= 4;
-	}
-	
-	requestAnimationFrame(draw);
 }
 
 document.addEventListener("keydown", keyDown, false);
 document.addEventListener("keyup", keyUp, false);
 document.addEventListener("mousemove", mouseMove, false);
+document.addEventListener("ontouchend", onTouchEnd, false);
 
-draw();
+drawStatic();
+
+
+
+
 
