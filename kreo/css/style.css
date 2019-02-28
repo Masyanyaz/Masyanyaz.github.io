@@ -2,7 +2,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 body {
@@ -36,7 +35,7 @@ ul, li {
 }
 
 .container {
-	width: 95%;
+	max-width: 95%;
 }
 
 .logo {
@@ -89,7 +88,7 @@ ul, li {
 }
 
 .social a {
-	margin: 0 13px;
+	margin: 0 15px;
 	font-size: 20px;
 }
 
@@ -162,17 +161,14 @@ h1::after {
 	display: flex;
 	width: 200px;
 	height: 54px;
-	float: right;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: -27px;
-	margin-right: -150px;
+	margin-left: auto;
 	border-radius: 4px;
 	font-size: 13px;
 	color: #fff;
 	letter-spacing: .1em;
-	text-decoration: none
-
+	text-decoration: none;
 }
 
 .more a:hover {
@@ -184,6 +180,10 @@ h1::after {
 .more i {
 	padding-left: 5px;
 
+}
+
+.title {
+	width: 90%;
 }
 
 .title h3 {
@@ -205,7 +205,6 @@ h1::after {
 
 .title p {
 	font-size: 20px;
-	width: 93%;
 	color: rgba(255, 255, 255, .2);
 	line-height: 1.9;
 	margin-bottom: 60px;
@@ -225,10 +224,6 @@ h1::after {
 img {
 	width: 100%;
 	padding: 0;
-}
-
-.services .title {
-	/*margin-top: 800px;*/
 }
 
 h4 {
@@ -267,6 +262,7 @@ h4 {
 
 .members ul {
 	display: flex;
+	margin-bottom: 25px;
 }
 
 .members a {
@@ -328,4 +324,129 @@ h4 {
 
 .reviews .slider {
 	margin-bottom: 40px;
+}
+
+.contact {
+	background: #12151b;
+}
+
+input {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	display: block;
+	border-radius: 3px;
+	padding: 18px 20px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	width: 100%;
+	font-weight: bold;
+	color: #a3a4a6;
+}
+
+#message {
+	padding: 20px 0 200px 20px;
+}
+
+.sumbit a {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	width: 100%;
+	padding: 18px 0;
+	background: #fdc501;
+	letter-spacing: 2px;
+	border-radius: 3px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 130px;
+}
+
+.sumbit a:hover {
+	background: #e64e04;
+	color: #fff;
+	transition: all .4s ease-in-out
+}
+
+.contact__text p {
+	font-size: 19px;
+	letter-spacing: 2;
+	line-height: 1.7;
+	margin-bottom: 8px;
+}
+
+.contact .more {
+	margin: 0 auto;
+}
+
+.footer {
+	text-align: center;
+	color: rgba(255, 255, 255, .2);
+}
+
+.social__links {
+	display: flex;
+	margin-top: 70px;
+	justify-content: center;
+
+}
+
+.social__links a {
+	color: rgba(255, 255, 255, .2);
+	font-size: 38px;
+	margin-right: 35px;
+}
+
+.social__links a:hover {
+	color: #fff;
+	transition: all .3s ease-in-out
+}
+
+.footer__logo {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	font-size: 28px;
+}
+
+.footer__logo::before {
+	content: "";
+	border-top: 1px solid;
+	width: 400px;
+	display: block;
+	margin: 30px auto;
+
+}
+
+.info p {
+	margin: 0 250px;
+	line-height: 2em
+}
+
+.copyright {
+	padding: 40px 0;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	
+	.home {
+		padding: 0;
+	}
+	.home .container{
+		max-width: 80%
+	}
+
+	.more a {
+		margin: 50px auto 0;
+	}
+
+	.contact__text {
+		text-align: center;
+	}
+
+	.title,
+	.title h3::after {
+		text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
 }
