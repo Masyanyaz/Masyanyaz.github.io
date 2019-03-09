@@ -139,6 +139,14 @@ h1::after {
 	margin-bottom: 70px;
 }
 
+.slider ul {
+	display: none;
+}
+
+.slider__active {
+	display: block;
+}
+
 .slider__control {
 	display: flex;
 	margin-bottom: 95px;
