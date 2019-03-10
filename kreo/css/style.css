@@ -139,20 +139,20 @@ h1::after {
 	margin-bottom: 70px;
 }
 
-.slider ul {
+.slider li {
 	display: none;
 }
 
-.slider__active {
+.slider .slider__active {
 	display: block;
 }
 
-.slider__control {
+.control {
 	display: flex;
 	margin-bottom: 95px;
 }
 
-.slider__control a {
+.control a {
 	display: block;
 	background: #fff;
 	width: 12px;
@@ -161,7 +161,7 @@ h1::after {
 	margin: 0 6px;
 }
 
-.slider__control .active__control {
+.control .control__active {
 	background: #fdc501;
 	cursor: default;
 }
