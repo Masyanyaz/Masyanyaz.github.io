@@ -763,18 +763,23 @@ header {
     font-size: 14px;
   }
 
+  .card {
+    margin-top: 27em;
+  }
   .card-text {
     width: 640px;
     font-size: 4rem;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
     margin-left: 60px;
   }
   .card-order {
     margin-left: 135px;
   }
   .card-order_name {
-    width: 500px;
-    height: 75px;
+    width: 495px;
+    height: 60px;
+    font-size: 22px;
+    margin-bottom: 16px;
   }
   .card-order_btn {
     margin-left: 42px;
