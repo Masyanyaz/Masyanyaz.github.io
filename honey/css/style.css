@@ -281,8 +281,11 @@ header {
   color: #000;
   font-size: 30px;
   font-weight: bold;
-  margin: 57px auto 0;
-  height: 410px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .product-item_title {
   line-height: 24px;
@@ -730,10 +733,6 @@ header {
     margin-top: -130px;
   }
 
-  .ps {
-    margin-top: 0;
-  }
-
   .whyWe {
     margin-top: 0;
     padding-bottom: 300px;
@@ -756,6 +755,22 @@ header {
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1599px) {
+  .container {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .card {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-top: 23em;
+  }
   .card-text {
     width: 715px;
     font-size: 4.5rem;
@@ -795,6 +810,35 @@ header {
   }
   .stock-text span:last-child {
     font-size: 56px;
+  }
+
+  .product {
+    margin-top: -250px;
+  }
+
+  .whyWe {
+    margin-top: -200px;
+  }
+  .whyWe .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cosmetic {
+    margin-top: -320px;
+  }
+
+  .videoLife {
+    margin-top: -80px;
+  }
+
+  .work {
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+
+  .question {
+    padding: 65px 0;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
@@ -873,6 +917,10 @@ header {
   .objects-item-third {
     padding-left: 50px;
   }
+
+  .whyWe {
+    margin-top: -80px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   header {
@@ -903,25 +951,25 @@ header {
   }
 
   .card {
-    margin-top: 26em;
+    margin-top: 22em;
   }
   .card-text {
     width: 530px;
     font-size: 3.3rem;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-left: 20px;
   }
   .card-order {
     margin-left: 126px;
   }
   .card-order_name {
-    width: 390px;
-    height: 70px;
-    font-size: 28px;
+    width: 360px;
+    height: 50px;
+    font-size: 24px;
   }
   .card-order_btn {
     padding: 22px 45px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 86px;
     margin-left: 12px;
   }

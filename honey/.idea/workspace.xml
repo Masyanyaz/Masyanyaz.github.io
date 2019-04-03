@@ -12,10 +12,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.65839124">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
+                <state relative-caret-position="7733">
                   <caret line="747" column="25" lean-forward="true" selection-start-line="747" selection-start-column="25" selection-end-line="747" selection-end-column="25" />
                 </state>
               </provider>
@@ -39,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+                <state relative-caret-position="-3653">
+                  <caret line="43" selection-start-line="43" selection-end-line="43" />
                 </state>
               </provider>
             </entry>
@@ -55,8 +55,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="105" selection-start-line="105" selection-end-line="106" selection-end-column="18" />
+                <state relative-caret-position="466">
+                  <caret line="215" selection-start-line="215" selection-end-line="215" />
                 </state>
               </provider>
             </entry>
@@ -178,12 +178,12 @@
       <workItem from="1554188806463" duration="53423000" />
       <workItem from="1554269788831" duration="1208000" />
       <workItem from="1554273769761" duration="17423000" />
-      <workItem from="1554293022224" duration="14839000" />
+      <workItem from="1554293022224" duration="18120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121300000" />
+    <option name="totallyTimeSpent" value="124581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -271,24 +271,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="747" column="25" lean-forward="true" selection-start-line="747" selection-start-column="25" selection-end-line="747" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="105" selection-start-line="105" selection-end-line="106" selection-end-column="18" />
+        <state relative-caret-position="466">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="-3653">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7733">
+          <caret line="747" column="25" lean-forward="true" selection-start-line="747" selection-start-column="25" selection-end-line="747" selection-end-column="25" />
         </state>
       </provider>
     </entry>

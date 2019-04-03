@@ -41,8 +41,6 @@
           font-size: 58px
   .product
     margin-top: -130px
-  .ps
-    margin-top: 0
   .whyWe
     margin-top: 0
     padding-bottom: 300px
@@ -56,7 +54,19 @@
     padding-bottom: 103px
 
 @media screen and (min-width: 1440px) and (max-width: 1599px)
+  .container
+    -webkit-transform: scale(.8)
+    -moz-transform: scale(.8)
+    -ms-transform: scale(.8)
+    -o-transform: scale(.8)
+    transform: scale(.8)
   .card
+    -webkit-transform: scale(.8)
+    -moz-transform: scale(.8)
+    -ms-transform: scale(.8)
+    -o-transform: scale(.8)
+    transform: scale(.8)
+    margin-top: 23em
     &-text
       width: 715px
       font-size: 4.5rem
@@ -87,7 +97,22 @@
             margin-left: 200px
         &:last-child
           font-size: 56px
-
+  .product
+    margin-top: -250px
+  .whyWe
+    margin-top: -200px
+    .container
+      display: flex
+      flex-direction: column
+  .cosmetic
+    margin-top: -320px
+  .videoLife
+    margin-top: -80px
+  .work
+    margin-bottom: 10px
+    margin-top: -20px
+  .question
+    padding: 65px 0
 
 @media screen and (min-width: 1280px) and (max-width: 1439px)
   .cap
@@ -149,6 +174,8 @@
       width: 1200px
       &-third
         padding-left: 50px
+  .whyWe
+    margin-top: -80px
 
 
 @media screen and (min-width: 1024px) and (max-width: 1279px)
@@ -171,21 +198,21 @@
       &-time
         font-size: 12px
   .card
-    margin-top: 26em
+    margin-top: 22em
     &-text
       width: 530px
       font-size: 3.3rem
-      margin-bottom: 60px
+      margin-bottom: 30px
       margin-left: 20px
     &-order
       margin-left: 126px
       &_name
-        width: 390px
-        height: 70px
-        font-size: 28px
+        width: 360px
+        height: 50px
+        font-size: 24px
       &_btn
         padding: 22px 45px
-        font-size: 20px
+        font-size: 18px
         line-height: 86px
         margin-left: 12px
   .services
