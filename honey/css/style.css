@@ -143,7 +143,6 @@ header {
 }
 .card-order {
   margin-left: 188px;
-  z-index: 99;
 }
 .card-order_name {
   display: block;
@@ -339,18 +338,6 @@ header {
 .row-last {
   display: flex;
   justify-content: space-evenly;
-}
-
-.gift {
-  display: none;
-}
-
-.reviews {
-  display: none;
-  margin-top: 177px;
-}
-.reviews .title-text {
-  width: 500px;
 }
 
 .whyWe {
@@ -567,6 +554,14 @@ header {
   padding-left: 34px;
 }
 
+.reviews {
+  display: none;
+  margin-top: 177px;
+}
+.reviews .title-text {
+  width: 500px;
+}
+
 .question {
   background: url("../img/question_bg.jpg") no-repeat;
   padding-top: 103px;
@@ -682,12 +677,32 @@ header {
 }
 
 @media screen and (max-width: 1919px) {
+  .container {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
   .cap-logo img {
     width: 280px;
   }
 
   .card {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
     margin-top: 33em;
+  }
+  .card-text {
+    margin-bottom: 85px;
+  }
+  .card-order_name {
+    width: 530px;
+    height: 80px;
   }
 
   .stock img {
@@ -695,7 +710,7 @@ header {
   }
   .stock-text {
     font-size: 44px;
-    margin-left: 11%;
+    margin-left: 1%;
   }
   .stock-text:first-child {
     margin-bottom: 36px;
@@ -709,6 +724,35 @@ header {
   }
   .stock-text span:last-child {
     font-size: 58px;
+  }
+
+  .product {
+    margin-top: -130px;
+  }
+
+  .ps {
+    margin-top: 0;
+  }
+
+  .whyWe {
+    margin-top: 0;
+    padding-bottom: 300px;
+  }
+
+  .cosmetic {
+    margin-top: -300px;
+  }
+
+  .videoLife {
+    margin-top: 0;
+  }
+
+  .work {
+    margin-bottom: 100px;
+  }
+
+  .question {
+    padding-bottom: 103px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1599px) {
