@@ -4,30 +4,31 @@
     <title>Maksim Bryachnev</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
+<header class="header">
+    <div class="header-container">
         <div class="row cap">
-            <div class="cap-logo">
+            <div class="col-auto cap-logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="col-xl-auto">
+            <div class="col-auto">
                 <p class="cap-sale">Акция!</p>
             </div>
-            <div class="col-xl-9">
+            <div class="col-6">
                 <ul class="cap-menu">
-                    <li>Наша продукция<i class="fa fa-angle-down"></i></li>
-                    <li>О компании</li>
-                    <li>Доставка</li>
-                    <li>Отзывы</li>
+                    <li><a href="#">Наша продукция<i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Отзывы</a></li>
                 </ul>
             </div>
-            <ul class="cap-contacts">
+            <ul class="col-auto cap-contacts">
                 <li>+375(00) 000-00-00</li>
                 <li>+375(00) 000-00-00</li>
                 <li class="cap-contacts-time">с 09:00 до 24:00 без выходных</li>
@@ -36,8 +37,7 @@
     </div>
 </header>
 <div class="home" id="home">
-    <h1 class="headline">Натуральный мёд</h1>
-    <div class="container">
+    <div class="home-container">
         <div class="row">
             <div class="col-7 offset-5">
                 <div class="card">
@@ -52,31 +52,42 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="row">
-            <div class="col-xl-12">
+        <div class="row home-row">
+            <div class="col-auto">
                 <div class="services">
                     <div class="services-item">
                         <img src="img/shield.png" alt="">
-                        <p class="services-item_text">100 % натуральный</p>
+                        <p class="services-item_text">100 % <br>натуральный</p>
                     </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="services">
                     <div class="services-item">
                         <img src="img/wallet.png" alt="">
                         <p class="services-item_text">Лучшая цена</p>
                     </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="services">
                     <div class="services-item">
                         <img src="img/delivery-truck.png" alt="">
-                        <p class="services-item_text">Бесплатная доставка от 40 руб.</p>
+                        <p class="services-item_text">Бесплатная <br>доставка от 40 руб.</p>
                     </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="services">
                     <div class="services-item">
                         <img src="img/growth.png" alt="">
-                        <p class="services-item_text">Экологически чистый</p>
+                        <p class="services-item_text">Экологически <br>чистый</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <section class="stock">
     <div class="container">
@@ -96,9 +107,743 @@
     </div>
 </section>
 <section class="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Наша продукция
+                    </h2>
+                </div>
+                <div class="toggle">
+                    <a href="#" class="toggle-btn toggle-active">
+                        Цветочный мёд
+                    </a>
+                    <a href="#" class="toggle-btn">
+                        Подарочные наборы
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-1.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-3.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-1.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-3.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-3.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-1.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-1.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med-3.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text">
+                        <span class="product-item_text-span"><span>11.49</span> бел.руб.</span>
+                        <span>10.49 бел.руб.</span>
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med3-1.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">14</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med3-2.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">14</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med3-3.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">14</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/med3-4.png" alt="honey">
+                    <h4 class="product-item_title">
+                        Луговой
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">15</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="ps">
+                    * можно   выбрать  люой мёд и седелать его с прополисом
+                </p>
+                <div class="title">
+                    <h2 class="title-text_product">
+                        Продукты пчеловода
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-1.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Соты
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">20</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-2.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Воск
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">27</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-3.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Перга
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">10</span> бел.руб.
+                        за 100 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-4.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Пыльца
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">10</span> бел.руб.
+                        за 100 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
 
+        </div>
+        <div class="row-last">
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-5.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Прополис
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">10</span> бел.руб.
+                        за 50 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-6.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Подмор
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">2</span> бел.руб.
+                        за 10 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<section class="gift">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Наша продукция
+                    </h2>
+                </div>
+                <div class="toggle">
+                    <a href="#" class="toggle-btn">
+                        Цветочный мёд
+                    </a>
+                    <a href="#" class="toggle-btn toggle-active">
+                        Подарочные наборы
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row-last">
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-1.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Соты
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">20</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-2.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Воск
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">27</span> бел.руб.
+                        за 1 кг
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-3.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Перга
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">10</span> бел.руб.
+                        за 100 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row-last">
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-5.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Прополис
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">10</span> бел.руб.
+                        за 50 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product-item">
+                    <img src="img/prod_pchel-6.png" alt="honey" class="product-item_img">
+                    <h4 class="product-item_title">
+                        Подмор
+                    </h4>
+                    <p class="product-item_text small">
+                        <span class="small-span">2</span> бел.руб.
+                        за 10 г
+                    </p>
+                    <a class="product-item_btn btn">
+                        Узнать подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Отзывы о нас
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="whyWe">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title whyWe-title">
+                    <h2 class="title-text whyWe-title-text">
+                        Дарим подарки
+                    </h2>
+                </div>
+                <div class="presents">
+                    <img src="img/pod2.png" alt="">
+                    <img src="img/pod1.png" alt="">
+                    <p class="presents-text">
+                        Каждому попупателю  при заказе от 40 бел.руб. <br>
+                        вкусные соты в подарок!
+                    </p>
+                </div>
+                <div class="title whyWe-second-title">
+                    <h2 class="title-text whyWe-second-title-text">
+                        Почему <br>
+                        мёд покупают у нас
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="objects">
+                    <div class="objects-item">
+                        <div class="objects-item-first">
+                            <img src="img/01.png" alt="">
+                            <p class="objects-text">
+                                У нас всегда
+                                100% натуральный мёд,
+                                не разбавленный
+                            </p>
+                        </div>
+                        <div class="objects-item-second">
+                            <img src="img/02.png" alt="">
+                            <p class="objects-text">
+                                У нас лучшая цена,
+                                так как мы являемся
+                                производителями
+                            </p>
+                        </div>
+                    </div>
+                    <div class="objects-item">
+                        <div class="objects-item-third">
+                            <img src="img/03.png" alt="">
+                            <p class="objects-text">
+                                Всегда <br>
+                                свежий мёд
+                            </p>
+                        </div>
+                        <div class="objects-item-fourth">
+                            <img src="img/04.png" alt="">
+                            <p class="objects-text">
+                                Не продаем
+                                растопленный
+                                прошлогодний мёд
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="fact">
+                    <p class="fact-title">Важный факт!</p>
+                    <p>Внимание! Участился обман!</p>
+                    <p class="fact-title-honey">В нашем мёде</p>
+                    <div class="fact-pros">
+                        <p>Нет патоки</p>
+                        <p>Нет крахмала</p>
+                        <p>Нет антибиотиков</p>
+                        <p>Нет инвертного сахара</p>
+                        <p>Нет воды</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cosmetic">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Мы используем мёд в косметике
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="cosmetic-row">
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_01.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд для приготовления крема для рук
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_02.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд для приготовления маски для лица
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_03.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд для приготовления спа процедур
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_04.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд для ежедневного ухода за телом
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_05.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд при правильном питании
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 cosmetic-row-col">
+                <div class="cosmetic-item">
+                    <img src="img/kosm_06.png" alt="">
+                    <p class="cosmetic-item-text">
+                        Мёд для приготовления блюд
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="videoLife">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Видео с нашей пасеки
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <video class="videoLife-first" controls poster="img/video.jpg">
+                    <source src="#">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Схема работы
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="img/shema.png" alt="">
+                <div class="work-step">
+                    <p>Оформление заявки, связываемся с Вами</p>
+                    <p>Формируем заказы, готовим к отправке</p>
+                    <p>Доставка мёда к Вам домой</p>
+                    <p>Получаете товар и наслаждаетесь мёдом</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="delivery">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Доставка
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="delivery-truck">
+                        <img src="img/dost.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-1">
+                    <div class="delivery-text">
+                        <p class="delivery-text-item">
+                            Доставим
+                            по Минску быстро в день заказа
+                        </p>
+                        <p class="delivery-text-item">
+                            Вы можете сделать
+                            любые проверки мёда
+                            в присутствии нашего курьера
+                        </p>
+                        <p class="delivery-text-item">
+                            Есть какие-либо подозрения? <br>
+                            Мёд заберем обратно
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="question">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h2 class="title-text">
+                        Остались вопросы?
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 offset-1">
+                <div class="question-text">
+                    <p class="question-text-item">
+                        <span class="question-text-item_span">Время работы</span> <br>
+                        Ежедневно с 9:00 до 24:00
+                    </p>
+                    <p class="question-text-item">
+                        <span class="question-text-item_span">Время доставки</span> <br>
+                        Ежедневно с 16:00 — 22:00
+                    </p>
+                    <p class="question-text-item">
+                        <span class="question-text-item_span">При заказе до 15:00</span>
+                        <br> доставка осуществляется <br> в тот же день
+                    </p>
+                    <p class="question-text-item">
+                        <span class="question-text-item_span">Бесплатная доставка</span>
+                        <br> при заказе на сумму от 40 руб.
+                    </p>
+                    <p class="question-text-item">
+                        Доставка на сумму до 40 руб. — 5 руб.
+                        При самовывозе уточняйте адрес
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="question-form">
+                    <p class="question-form-text">
+                        Задайте вопрос <br>
+                        нашим консультантам
+                    </p>
+                    <input type="text" class="question-form-input" placeholder="Ваше имя">
+                    <input type="text" class="question-form-input" placeholder="Ваш телефон">
+                    <input type="text" class="question-form-input" placeholder="Ваше сообщение">
+                    <a href="" class="question-form-btn btn">Получить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="col-xl-2">
+                <div class="footer-ip">
+                    <p>ИП</p>
+                    <p>УНП <br> 220055, г. Минск</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <h1 class="footer-title">Натуральный мёд</h1>
+            </div>
+            <div class="col-xl-3">
+                <div class="footer-contacts">
+                    <p>
+                        +375(00) 000-00-00 <br>
+                        +375(00) 000-00-00 <br>
+                        xxxxxxxx@yandex.by
+                    </p>
+                    <p class="footer-contacts_span">Разработка сайта : mMm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </body>
