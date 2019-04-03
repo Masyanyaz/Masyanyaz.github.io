@@ -122,6 +122,8 @@ header
       &:hover
         transition: all .2s
         box-shadow: inset 5px 5px 14px rgba(0,0,0,.5), inset -6px -5px 14px rgba(255,255,255,.8)
+      &:active
+        background: lighten(#febd02, 10%)
 
 .services
   display: flex
@@ -259,7 +261,8 @@ header
   &:hover
     transition: all .2s
     box-shadow: inset 5px 5px 14px rgba(0,0,0,.5), inset -6px -5px 14px rgba(255,255,255,.8)
-
+  &:active
+    background: lighten(#febd02, 10%)
 
 .ps
   color: #f7b850
@@ -449,11 +452,48 @@ header
       padding-left: 34px
 
 .reviews
-  display: none
   margin-top: 177px
   .title
     &-text
       width: 500px
+  &-items
+    margin-top: 70px
+    &_item
+      width: 945px
+      height: 312px
+      background-color: #efeff0
+      border-radius: 30px
+      margin: 0 auto
+      img
+        padding-right: 41px
+      &-info
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 51px 0 0 61px
+      &-p
+        color: #000000
+        font-family: Lato
+        font-size: 24px
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: -0.24px
+      &-name
+        color: #000000
+        font-family: "Sybilla-Heavy"
+        font-size: 24px
+        font-weight: 400
+        line-height: 48px
+      &-date
+        color: #626262
+        font-family: "Sybilla-Heavy"
+        font-size: 20px
+        font-weight: 400
+        padding-right: 32px
+        line-height: 48px
+        display: flex
+        justify-content: flex-end
+
 
 .question
   .row
