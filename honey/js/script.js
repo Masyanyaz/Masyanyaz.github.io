@@ -13,9 +13,10 @@ $(function() {
         let i = $(this);
         if (i.hasClass('toggle-active')) {
             return false;
-            console.log('asd')
         } else {
-            $('.toggle-btn').removeClass('toggle-active').eq(i).addClass('slider__active');
+            $('.toggle-btn').toggleClass('toggle-active');
+            $('.toggle-row').toggleClass('active');
+            $('.toggle-row').toggleClass('hidden');
         }
     });
 

@@ -269,6 +269,13 @@ header {
   border-radius: 30px;
   color: #fff;
 }
+.toggle-active:hover {
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
 
 .product-item {
   text-align: center;
