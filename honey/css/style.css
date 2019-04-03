@@ -276,6 +276,7 @@ header {
   font-size: 30px;
   font-weight: bold;
   margin: 57px auto 0;
+  height: 410px;
 }
 .product-item_title {
   line-height: 24px;
@@ -505,6 +506,9 @@ header {
   display: flex;
 }
 
+.work {
+  margin-bottom: 162px;
+}
 .work .title-text {
   width: 510px;
   margin: -65px auto 62px;
@@ -526,7 +530,7 @@ header {
   padding-bottom: 106px;
 }
 .delivery .title-text {
-  margin: 162px auto 69px;
+  margin: 0 auto 69px;
 }
 .delivery-truck {
   background: #f8f5f5;
