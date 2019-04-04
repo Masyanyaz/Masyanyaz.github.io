@@ -138,8 +138,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="295">
-                  <caret line="369" column="10" lean-forward="true" selection-start-line="369" selection-start-column="10" selection-end-line="369" selection-end-column="10" />
+                <state relative-caret-position="312">
+                  <caret line="427" column="8" selection-start-line="427" selection-start-column="8" selection-end-line="427" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -151,8 +151,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
-                  <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+                <state relative-caret-position="496">
+                  <caret line="421" column="4" lean-forward="true" selection-start-line="421" selection-start-column="4" selection-end-line="421" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -279,12 +279,12 @@
       <workItem from="1554293022224" duration="27732000" />
       <workItem from="1554362854517" duration="374000" />
       <workItem from="1554363373764" duration="64000" />
-      <workItem from="1554363443143" duration="12030000" />
+      <workItem from="1554363443143" duration="12814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146661000" />
+    <option name="totallyTimeSpent" value="147445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -376,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6018">
-          <caret line="356" column="8" selection-start-line="356" selection-start-column="8" selection-end-line="356" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -487,10 +480,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6018">
+          <caret line="356" column="8" selection-start-line="356" selection-start-column="8" selection-end-line="356" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="369" column="10" lean-forward="true" selection-start-line="369" selection-start-column="10" selection-end-line="369" selection-end-column="10" />
+        <state relative-caret-position="312">
+          <caret line="427" column="8" selection-start-line="427" selection-start-column="8" selection-end-line="427" selection-end-column="8" />
         </state>
       </provider>
     </entry>

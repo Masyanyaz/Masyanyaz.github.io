@@ -1173,7 +1173,7 @@ header {
   }
   .cap-active {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
     margin-top: 15px;
   }
@@ -1315,7 +1315,11 @@ header {
   .work-step {
     font-size: 22px;
     line-height: 26px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
+  }
+  .work-step p:last-child {
+    padding-left: 30px;
+    margin-left: 0;
   }
 
   .delivery {
@@ -1336,7 +1340,7 @@ header {
     margin-top: 70px;
   }
   .reviews-items_item {
-    height: 370px;
+    height: 380px;
   }
 
   .left-row {

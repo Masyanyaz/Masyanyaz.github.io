@@ -320,7 +320,7 @@
       display: none
     &-active
       display: flex
-      justify-content: space-evenly
+      justify-content: space-around
       flex-direction: column
       margin-top: 15px
   .title
@@ -423,7 +423,10 @@
     &-step
       font-size: 22px
       line-height: 26px
-      letter-spacing: 0px
+      letter-spacing: 0
+      p:last-child
+        padding-left: 30px
+        margin-left: 0
   .delivery
     padding-bottom: 50px
     margin-top: -80px
@@ -436,7 +439,7 @@
     &-items
       margin-top: 70px
       &_item
-        height: 370px
+        height: 380px
   .left-row
     margin-left: -50px
 
