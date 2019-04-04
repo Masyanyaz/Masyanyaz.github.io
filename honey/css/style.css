@@ -73,6 +73,9 @@ header {
   height: 128px;
   justify-content: space-between;
 }
+.cap-active {
+  display: none;
+}
 .cap-logo {
   margin-left: 1%;
 }
@@ -574,7 +577,7 @@ header {
 }
 
 .reviews {
-  margin-top: 177px;
+  margin-top: 120px;
 }
 .reviews .title-text {
   width: 500px;
@@ -809,6 +812,10 @@ header {
     margin-bottom: 100px;
   }
 
+  .reviews {
+    margin-top: 0;
+  }
+
   .question {
     padding-bottom: 103px;
   }
@@ -889,6 +896,10 @@ header {
 
   .videoLife {
     margin-top: -80px;
+  }
+
+  .reviews {
+    margin-top: -130px;
   }
 
   .work {
@@ -1150,6 +1161,196 @@ header {
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
     transform: scale(0.7);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 140px;
+  }
+
+  .cap-hidden {
+    display: none;
+  }
+  .cap-active {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .title-text {
+    font-size: 48px;
+  }
+
+  .home-down-row {
+    margin-left: 80px;
+  }
+
+  .card {
+    margin-top: 18em;
+  }
+  .card-text {
+    width: 650px;
+    font-size: 3.4rem;
+    margin-bottom: 35px;
+    margin-left: 120px;
+  }
+  .card-order {
+    margin-left: 266px;
+  }
+  .card-order_name {
+    width: 390px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .card-order_btn {
+    padding: 20px 28px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  .services-item {
+    margin-bottom: 50px;
+  }
+
+  .stock img {
+    width: 300px;
+    margin: -35px 0 0 0;
+  }
+  .stock-text {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .stock-text:first-child {
+    margin-bottom: 20px;
+  }
+  .stock-text span:first-child {
+    font-size: 36px;
+  }
+  .stock-text span:first-child::after {
+    width: 315px;
+    height: 3px;
+    margin-left: 140px;
+  }
+  .stock-text span:last-child {
+    font-size: 36px;
+  }
+
+  .product {
+    margin-top: -250px;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+    margin: 79px 40px 0;
+  }
+
+  .whyWe {
+    margin-top: -150px;
+  }
+
+  .presents img {
+    width: 170px;
+  }
+  .presents-text {
+    width: 280px;
+    font-size: 20px;
+  }
+
+  .objects {
+    background: url(../img/why_honey.png) no-repeat 55% -100%/98%, url(../img/why_flower.png) no-repeat 360px 380px/50%;
+  }
+  .objects-item {
+    width: 800px;
+  }
+  .objects-item img {
+    width: 170px;
+  }
+  .objects-item:last-child {
+    height: 500px;
+    margin-top: 70px;
+  }
+  .objects-text {
+    width: 310px;
+    font-size: 28px;
+  }
+
+  .fact {
+    font-size: 28px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  .cosmetic {
+    margin-top: -250px;
+  }
+  .cosmetic .title {
+    background: url("../img/bg-kosmetic.jpg") no-repeat 41px 50px;
+    -webkit-background-size: 295px;
+    background-size: 270px;
+    margin-top: -40px;
+  }
+  .cosmetic .title-text {
+    width: 555px;
+  }
+
+  .cosmetic-row {
+    text-align: center;
+  }
+
+  .videoLife {
+    margin-top: -100px;
+    background-size: 65%;
+  }
+  .videoLife-first {
+    width: 700px;
+  }
+
+  .work img {
+    width: 700px;
+  }
+  .work-step {
+    font-size: 23px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+
+  .delivery {
+    padding-bottom: 50px;
+    margin-top: -80px;
+  }
+  .delivery-truck {
+    margin: 0 auto;
+  }
+  .delivery-text {
+    margin: 60px auto 0;
+  }
+
+  .reviews {
+    margin-top: -50px;
+  }
+  .reviews-items {
+    margin-top: 70px;
+  }
+  .reviews-items_item {
+    height: 370px;
+  }
+
+  .left-row {
+    margin-left: -50px;
+  }
+
+  .footer {
+    font-size: 22px;
+  }
+  .footer .container {
+    max-width: 100%;
+  }
+  .footer-contacts_span {
+    font-size: 12px;
   }
 }
 
