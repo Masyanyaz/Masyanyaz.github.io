@@ -1241,8 +1241,8 @@ header {
   }
 
   .toggle-btn {
-    font-size: 14px;
-    margin: 79px 40px 0;
+    font-size: 13px;
+    margin: 79px 35px 0;
   }
 
   .whyWe {
@@ -1313,7 +1313,7 @@ header {
     width: 700px;
   }
   .work-step {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 26px;
     letter-spacing: 0px;
   }
