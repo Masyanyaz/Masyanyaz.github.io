@@ -165,9 +165,11 @@ header {
   background-color: #fca802;
   font-size: 24px;
   font-weight: bold;
-  line-height: 115px;
+  color: #fff;
   border-radius: 40px;
   margin-left: 48px;
+  outline: none;
+  border: none;
   box-shadow: inset 5px 5px 14px rgba(255, 255, 255, 0.8), inset -6px -5px 14px rgba(0, 0, 0, 0.5);
 }
 .card-order_btn:hover {
@@ -330,6 +332,9 @@ header {
   width: 200px;
   height: 200px;
 }
+.product-item-info-text {
+  display: none;
+}
 
 .btn {
   color: #fff;
@@ -341,6 +346,7 @@ header {
   box-shadow: inset 5px 5px 14px rgba(255, 255, 255, 0.8), inset -6px -5px 14px rgba(0, 0, 0, 0.5);
 }
 .btn:hover {
+  cursor: pointer;
   transition: all 0.2s;
   box-shadow: inset 5px 5px 14px rgba(0, 0, 0, 0.5), inset -6px -5px 14px rgba(255, 255, 255, 0.8);
 }
@@ -360,6 +366,7 @@ header {
 .row-last {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .whyWe {
@@ -683,12 +690,13 @@ header {
   font-size: 24px;
   padding-left: 29px;
 }
-.question-form-input:last-of-type {
+.question-form-input:nth-child(4) {
   height: 134px;
-  margin-bottom: 50px;
 }
 .question-form-btn {
   padding: 20px 51px;
+  outline: none;
+  border: none;
 }
 
 .footer {
@@ -739,6 +747,94 @@ header {
   color: #71706e;
   font-size: 14px;
   line-height: 48px;
+}
+
+.more {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 80px 0;
+  color: #000;
+  overflow: auto;
+  display: none;
+}
+.more-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+}
+.more-close:hover {
+  cursor: pointer;
+}
+.more-info-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.more-info-gallery-img {
+  width: 200px;
+  height: 250px;
+}
+.more-info-title {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Sybilla-Medium";
+  margin-left: 20px;
+}
+.more-info-price {
+  font-size: 30px;
+  font-weight: bold;
+  width: 210px;
+  margin-top: 50px;
+  text-align: center;
+}
+.more-info-price-span {
+  text-decoration: line-through;
+}
+.more-info-price span:first-child span {
+  font-family: "Sybilla-Medium";
+  font-weight: 500;
+}
+.more-info-price span:nth-child(2) {
+  color: #f7b850;
+  font-family: "Sybilla-Medium";
+  font-weight: 500;
+}
+.more-info-select {
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+.more-info select {
+  font-size: 25px;
+}
+.more-info-btn {
+  display: table;
+  margin-top: 20px;
+}
+.more-info-text {
+  width: 450px;
+  font-size: 18px;
+}
+.more-info-text_span {
+  display: block;
+  font-family: "Sybilla-Medium";
+  margin: 20px 0;
+}
+.more-info-text_ul {
+  width: 550px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+.more-info-text_ul li {
+  list-style-type: disc;
 }
 
 @media screen and (max-width: 1919px) {
@@ -1040,7 +1136,6 @@ header {
   .card-order_btn {
     padding: 22px 45px;
     font-size: 18px;
-    line-height: 86px;
     margin-left: 12px;
   }
 
@@ -1206,7 +1301,6 @@ header {
   .card-order_btn {
     padding: 20px 28px;
     font-size: 18px;
-    line-height: 60px;
   }
 
   .services-item {
@@ -1241,7 +1335,7 @@ header {
   }
 
   .toggle-btn {
-    font-size: 14px;
+    font-size: 13px;
     margin: 79px 0 0;
   }
 
