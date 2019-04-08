@@ -199,10 +199,23 @@ header {
 }
 
 .stock {
-  background: url("../img/bg.jpg") no-repeat;
+  background: url("../img/sotbg.png") no-repeat;
   padding-top: 100px;
   padding-bottom: 30%;
   background-size: cover;
+
+}
+
+.pchel {
+  position: absolute;
+  top: -35%;
+  right: -55%;
+  width: 40% !important;
+}
+.rom {
+  position: absolute;
+  left: -33px;
+  width: 23% !important;
 }
 .stock-text {
   font-size: 48px;
@@ -517,6 +530,7 @@ header {
   background: url(../img/video-bg.jpg) no-repeat left center;
   padding: 79px 0 300px 0;
   margin-top: 88px;
+  background-size: 30%;
 }
 .videoLife .title-text {
   width: 730px;
@@ -585,6 +599,7 @@ header {
 
 .reviews {
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 .reviews .title-text {
   width: 500px;
@@ -869,6 +884,10 @@ header {
   .stock img {
     width: 550px;
   }
+  .rom {
+    position: absolute;
+    left: -43px;
+  }
   .stock-text {
     font-size: 44px;
     margin-left: 1%;
@@ -996,6 +1015,7 @@ header {
 
   .reviews {
     margin-top: -130px;
+    margin-bottom: 80px;
   }
 
   .work {
@@ -1057,6 +1077,13 @@ header {
   .stock {
     padding-bottom: 24%;
   }
+  .pchel{
+    right: -23%;
+    width: 30%;
+  }
+  rom{
+    left: 25px;
+  }
   .stock img {
     width: 480px;
     margin: -35px 0 0 -50px;
@@ -1082,6 +1109,13 @@ header {
   }
   .objects-item-third {
     padding-left: 50px;
+  }
+  .reviews {
+    margin-bottom: 80px;
+  }
+  .videoLife {
+    background-size: 32%;
+
   }
 
   .whyWe {
@@ -1149,6 +1183,11 @@ header {
   .stock img {
     width: 300px;
     margin: -35px 0 0 -50px;
+  }
+
+  .pchel{
+    right: -10%;
+    width: 30% !important;
   }
   .stock-text {
     width: 700px;
@@ -1250,6 +1289,10 @@ header {
     -o-transform: scale(0.7);
     transform: scale(0.7);
   }
+
+  .reviews {
+    margin-bottom: 80px;
+  }
   .delivery-text {
     -webkit-transform: scale(0.7);
     -moz-transform: scale(0.7);
@@ -1285,7 +1328,7 @@ header {
     margin-top: 18em;
   }
   .card-text {
-    width: 650px;
+    width: 606px;
     font-size: 3.4rem;
     margin-bottom: 35px;
     margin-left: 120px;
@@ -1305,6 +1348,10 @@ header {
 
   .services-item {
     margin-bottom: 50px;
+  }
+
+  rom{
+    left: 0;
   }
 
   .stock img {
@@ -1329,7 +1376,10 @@ header {
   .stock-text span:last-child {
     font-size: 36px;
   }
-
+  .pchel{
+    right: -15%;
+    width: 30% !important;
+  }
   .product {
     margin-top: -250px;
   }
@@ -1397,7 +1447,7 @@ header {
 
   .videoLife {
     margin-top: -100px;
-    background-size: 65%;
+    background-size: 37%;
   }
   .videoLife-first {
     width: 700px;
@@ -1429,6 +1479,7 @@ header {
 
   .reviews {
     margin-top: -50px;
+    margin-bottom: 70px;
   }
   .reviews-items {
     margin-top: 70px;
