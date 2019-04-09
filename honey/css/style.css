@@ -1498,6 +1498,12 @@ header {
     padding-left: 30px;
     margin-left: 0;
   }
+  .work-step p:nth-child(2) {
+    width: 300px;
+  }
+  .work-step p:first-child {
+    width: 350px;
+  }
 
   .delivery {
     padding-bottom: 50px;
