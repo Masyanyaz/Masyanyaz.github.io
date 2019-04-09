@@ -203,6 +203,7 @@ header {
   padding-top: 100px;
   padding-bottom: 30%;
   background-size: cover;
+  overflow: hidden;
 
 }
 
@@ -379,7 +380,7 @@ header {
 .row-last {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .whyWe {
@@ -528,7 +529,7 @@ header {
 
 .videoLife {
   background: url(../img/video-bg.jpg) no-repeat left center;
-  padding: 79px 0 300px 0;
+  padding: 79px 0 200px 0;
   margin-top: 88px;
   background-size: 30%;
 }
@@ -783,10 +784,13 @@ header {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 40px;
+  font-size: 58px;
 }
 .more-close:hover {
   cursor: pointer;
+}
+.more-volume{
+  font-size: 17px;
 }
 .more-info-gallery {
   display: flex;
@@ -1011,6 +1015,7 @@ header {
 
   .videoLife {
     margin-top: -80px;
+    padding-bottom: 170px;
   }
 
   .reviews {
@@ -1268,7 +1273,10 @@ header {
   .cosmetic .title-text {
     width: 555px;
   }
+  .videoLife{
+    padding-bottom: 100px;
 
+  }
   .work img {
     width: 950px;
   }
@@ -1314,6 +1322,10 @@ header {
     justify-content: space-around;
     flex-direction: column;
     margin-top: 15px;
+  }
+
+  .cap-sale{
+    display: none;
   }
 
   .title-text {
@@ -1448,6 +1460,8 @@ header {
   .videoLife {
     margin-top: -100px;
     background-size: 37%;
+    padding-bottom: 100px;
+
   }
   .videoLife-first {
     width: 700px;
