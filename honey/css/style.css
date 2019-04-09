@@ -1296,7 +1296,7 @@ header {
     width: 950px;
   }
   .work-step {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .delivery {
@@ -1490,8 +1490,8 @@ header {
     width: 700px;
   }
   .work-step {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0;
   }
   .work-step p:last-child {
