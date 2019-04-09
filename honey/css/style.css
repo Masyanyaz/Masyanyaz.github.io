@@ -58,6 +58,7 @@ header {
   box-shadow: 5px 7px 58px 4px rgba(201, 174, 91, 0.41);
   background-color: #ffc002;
   position: relative;
+  z-index: 99;
 }
 
 .header-container {
@@ -119,6 +120,8 @@ header {
   background: url("../img/bg3.jpg") no-repeat;
   background-size: 100vw 100%;
   padding-bottom: 20%;
+  transform: scaleY(0.9);
+  margin-top: -60px;
 }
 .home-container {
   max-width: 1550px;
@@ -135,7 +138,7 @@ header {
 }
 
 .card {
-  margin-top: 35em;
+  margin-top: 30em;
 }
 .card-text {
   width: 815px;
@@ -143,7 +146,7 @@ header {
   font-weight: bold;
   text-align: center;
   margin-left: 50px;
-  margin-bottom: 140px;
+  margin-bottom: 50px;
 }
 .card-order {
   margin-left: 188px;
@@ -891,7 +894,7 @@ header {
   }
   .rom {
     position: absolute;
-    left: -43px;
+    left: -35px;
   }
   .stock-text {
     font-size: 44px;
@@ -1034,6 +1037,10 @@ header {
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .home{
+    margin-top: -48px;
+
+  }
   .cap-logo img {
     width: 255px;
   }
@@ -1072,7 +1079,7 @@ header {
     margin-left: 42px;
   }
 
-  .services-item {
+  .services {
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -1087,8 +1094,8 @@ header {
     right: -23%;
     width: 30%;
   }
-  rom{
-    left: 25px;
+  .rom {
+    left: 20px;
   }
   .stock img {
     width: 480px;
@@ -1131,6 +1138,10 @@ header {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   header {
     height: 92px;
+  }
+  .home{
+    margin-top: -41px;
+
   }
 
   .title-text {
@@ -1194,6 +1205,9 @@ header {
   .pchel{
     right: -10%;
     width: 30% !important;
+  }
+  .rom {
+    left: 25px;
   }
   .stock-text {
     width: 700px;
@@ -1314,6 +1328,10 @@ header {
   header {
     height: 140px;
   }
+  .home{
+    margin-top: -41px;
+
+  }
 
   .cap-hidden {
     display: none;
@@ -1364,7 +1382,7 @@ header {
   }
 
   rom{
-    left: 0;
+    left: -20px;
   }
 
   .stock img {
