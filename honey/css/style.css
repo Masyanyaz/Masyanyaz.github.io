@@ -34,7 +34,6 @@ body, html {
   font-family: "Sybilla";
   font-size: 10px;
   overflow-x: hidden;
-<<<<<<< HEAD
 }
 
 body{
@@ -44,8 +43,6 @@ body{
   -o-transform: scaleY(0.9);
   transform: scaleY(0.9);
   margin: -698px 0;
-=======
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -133,12 +130,7 @@ header {
   background: url("../img/bg3.jpg") no-repeat;
   background-size: 100% 96%;
   padding-bottom: 20%;
-<<<<<<< HEAD
 
-=======
-  transform: scaleY(0.9);
-  margin-top: -60px;
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
 }
 .home-container {
   max-width: 1550px;
@@ -223,15 +215,9 @@ header {
   background: url("../img/sotbg.png") no-repeat;
   padding-top: 100px;
   padding-bottom: 30%;
-<<<<<<< HEAD
   background-size: 100% 100%;
   margin-left: -3px;
   overflow: hidden;
-=======
-  background-size: cover;
-  overflow: hidden;
-
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
 }
 
 .pchel {
@@ -242,14 +228,9 @@ header {
 }
 .rom {
   position: absolute;
-<<<<<<< HEAD
   left: -42px;
   width: 20% !important;
   margin-top: 95px
-=======
-  left: -33px;
-  width: 23% !important;
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
 }
 .stock-text {
   font-size: 48px;
@@ -562,15 +543,9 @@ header {
 
 .videoLife {
   background: url(../img/video-bg.jpg) no-repeat left center;
-<<<<<<< HEAD
   padding: 79px 0 100px 0;
   margin-top: 88px;
   background-size: 24%;
-=======
-  padding: 79px 0 200px 0;
-  margin-top: 88px;
-  background-size: 30%;
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
 }
 
 .videoLife .title-text {
@@ -937,10 +912,7 @@ header {
   .rom {
     position: absolute;
     left: -35px;
-<<<<<<< HEAD
     margin-top: 75px
-=======
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   }
   .stock-text {
     font-size: 44px;
@@ -1071,11 +1043,7 @@ header {
 
   .videoLife {
     margin-top: -80px;
-<<<<<<< HEAD
     padding-bottom: 30px;
-=======
-    padding-bottom: 170px;
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   }
 
   .reviews {
@@ -1093,17 +1061,10 @@ header {
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-<<<<<<< HEAD
   body{
     margin: -625px 0
   }
 
-=======
-  .home{
-    margin-top: -48px;
-
-  }
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   .cap-logo img {
     width: 255px;
   }
@@ -1159,10 +1120,7 @@ header {
   }
   .rom {
     left: 20px;
-<<<<<<< HEAD
     margin-top: 10px !important
-=======
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   }
   .stock img {
     width: 480px;
@@ -1208,10 +1166,6 @@ header {
   }
   header {
     height: 92px;
-  }
-  .home{
-    margin-top: -41px;
-
   }
 
 
@@ -1279,11 +1233,8 @@ header {
   }
   .rom {
     left: 25px;
-<<<<<<< HEAD
     margin-top: 5px !important;
 
-=======
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   }
   .stock-text {
     width: 700px;
@@ -1407,10 +1358,6 @@ header {
   header {
     height: 140px;
   }
-  .home{
-    margin-top: -41px;
-
-  }
 
 
   .cap-hidden {
@@ -1461,15 +1408,10 @@ header {
     margin-bottom: 50px;
   }
 
-<<<<<<< HEAD
   .rom{
     left: -20px;
     margin-top: 20px !important;
 
-=======
-  rom{
-    left: -20px;
->>>>>>> 1fb61eb750dd2091f446e55837d65e45023580d7
   }
 
   .stock img {
