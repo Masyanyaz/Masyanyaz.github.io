@@ -37,14 +37,12 @@ body, html {
 }
 
 body{
-  -webkit-transform: scaleY(0.9);
-  -moz-transform: scaleY(0.9);
-  -ms-transform: scaleY(0.9);
-  -o-transform: scaleY(0.9);
-  transform: scaleY(0.9);
   margin: -698px 0;
 }
+.body{
+  transform: scaleY(0.9);
 
+}
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;

@@ -27,9 +27,11 @@ $(function() {
     });
 
     $('.product-item_btn').click(function() {
+        $('body').toggleClass('body');
         let i = $(this);
         if (i.hasClass('product-item_btn')) {
             let title = i.parent().find('.product-item_title').text();
+
             $('.more-info-title').text(title);
 
             let info = i.parent().find('.product-item-info-text').html();
@@ -42,7 +44,6 @@ $(function() {
             $('.more-info-price').html(text);
 
             $('.more').css("display", "block");
-            console.log(img);
 
         } else {
             return false;
@@ -50,6 +51,7 @@ $(function() {
     });
 
     $('.more-close').click(function() {
+        $('body').toggleClass('body');
         $('.more').css("display", "none");
 
     });
