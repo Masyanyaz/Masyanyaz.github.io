@@ -60,6 +60,7 @@ $(function() {
         var name = $('input[name=fio]').val();
         var tel = $('input[name=tel]').val();
         var otpravka = true;
+
         if(name==""){
             otpravka = false;
         }
