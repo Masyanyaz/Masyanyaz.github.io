@@ -1419,6 +1419,7 @@ header {
   .stock-text {
     font-size: 26px;
     line-height: 37px;
+    margin-left: -20px
   }
   .stock-text:first-child {
     margin-bottom: 20px;
@@ -1439,7 +1440,7 @@ header {
     width: 30% !important;
   }
   .product {
-    margin-top: -250px;
+    margin-top: -200px;
   }
 
   .toggle-btn {
@@ -1452,7 +1453,7 @@ header {
   }
 
   .presents{
-    transform: scale(1.15)
+    transform: scale(1.2)
   }
   .presents img {
     width: 170px;
