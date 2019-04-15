@@ -128,7 +128,7 @@ header {
   background: url("../img/bg3.jpg") no-repeat;
   background-size: 100% 96%;
   padding-bottom: 20%;
-
+  zoom: 90%
 }
 .home-container {
   max-width: 1550px;
