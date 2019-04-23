@@ -1351,7 +1351,7 @@ header {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body{
-    margin: -640px 0
+    margin: -644px 0
   }
   header {
     height: 140px;
