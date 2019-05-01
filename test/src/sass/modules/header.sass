@@ -1,0 +1,122 @@
+.wrapper
+  font-family: Proxima
+  max-width: 1180px
+  margin: 34px auto 0
+  width: 90%
+
+.title
+  font-size: rem(37)
+  font-weight: 400
+  margin-bottom: 24px
+
+.banners
+  display: flex
+  justify-content: space-between
+  &-first
+    background: #ffde2f
+    display: flex
+    position: relative
+    &-left
+      width: 70%
+      display: flex
+      align-items: center
+    &_img
+      max-width: 237px
+      height: 278px
+      width: 100%
+      padding-left: 15px
+    &-info
+      &-title
+        font-size: rem(31)
+        font-weight: 700
+        margin-top: 18px
+        margin-bottom: 7px
+      &-text
+        font-size: rem(15)
+        font-weight: 400
+      &-price
+        &_new
+          color: #ff0072
+          font-size: rem(34)
+          font-weight: 700
+          margin-bottom: 11px
+          height: 27px
+        &_old
+          font-size: rem(16)
+          font-weight: 400
+          text-transform: uppercase
+          position: relative
+          &::after
+            content: ''
+            height: 2px
+            width: 62px
+            background: #ff0072
+            top: 12px
+            left: -4px
+            position: absolute
+            transform: rotateZ(7deg)
+      &-bottom
+        display: flex
+        justify-content: space-between
+        margin-right: 8%
+        align-items: center
+  &-second
+    position: relative
+    .btn
+      position: absolute
+      right: 4%
+      bottom: 7%
+
+.banner-item
+  max-width: 566px
+  min-width: 320px
+  width: 48%
+  height: 294px
+
+.btn
+  width: 142px
+  height: 45px
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44)
+  background-color: #ff0072
+  color: #fff
+  font-size: rem(18)
+  font-weight: 700
+  padding-top: 9px
+  line-height: 23.42px
+  text-transform: uppercase
+
+.timer
+  max-width: 282px
+  width: 95%
+  height: 78px
+  display: flex
+  justify-content: space-between
+  &-item
+    width: 31%
+    max-width: 80px
+    &-scoreboard
+      width: 100%
+      height: 55px
+      border-radius: 5px
+      background-color: #ffffff
+      margin-bottom: 5px
+      position: relative
+      &-time
+        font-family: Umnik
+        display: flex
+        align-items: center
+        font-size: rem(55)
+        font-weight: 700
+        letter-spacing: 12px
+        line-height: 61px
+        padding-left: 7px
+      &::before
+        content: ''
+        border-right: 2px dashed #fbb100
+        position: absolute
+        margin-left: 50%
+        height: 100%
+    &-text
+      text-align: center
+      font-size: rem(16)
+      font-weight: 400

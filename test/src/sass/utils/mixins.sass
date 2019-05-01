@@ -1,0 +1,18 @@
+@function rem($pixels, $context: 16px)
+  @if (unitless($pixels))
+    $pixels: $pixels * 1px
+  @if (unitless($context))
+    $context: $context * 1px
+  @return $pixels / $context * 1rem
+
+@mixin size($width,$height: $width)
+  width: $width
+  height: $height
+
+@mixin flex-center($direction: row, $align: center, $justify: center)
+  display: flex
+  flex-direction: $direction
+  align-items: $align
+  align-content: $align
+  justify-content: $justify
+
