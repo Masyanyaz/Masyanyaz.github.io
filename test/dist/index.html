@@ -23,19 +23,19 @@
           <div class="timer" id="app">
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">{{ theTime.hours }}</p>
+                <p class="timer-item-scoreboard-time">{{ hours }}</p>
               </div>
               <p class="timer-item-text">часов</p>
             </div>
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">{{ theTime.minutes }}</p>
+                <p class="timer-item-scoreboard-time">{{ minutes }}</p>
               </div>
               <p class="timer-item-text">минут</p>
             </div>
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">{{ theTime.seconds }}</p>
+                <p class="timer-item-scoreboard-time">{{ seconds }}</p>
               </div>
               <p class="timer-item-text">секунд</p>
             </div>
@@ -68,7 +68,7 @@
         minutes: '',
         seconds: ''
       },
-      computed: {
+      methods: {
         theTime(){
           setInterval(() => {
             let nowTime = new Date().getTime(),
@@ -82,12 +82,10 @@
             this.minutes = (tminutes < 10) ? '0' + tminutes : tminutes;
             this.seconds = (tseconds < 10) ? '0' + tseconds : tseconds;
           }, 1000);
-          return {
-            hours: this.hours,
-            minutes: this.minutes,
-            seconds: this.seconds
-          };
         }
+      },
+      mounted() {
+        this.theTime()
       }
     });
   </script>
