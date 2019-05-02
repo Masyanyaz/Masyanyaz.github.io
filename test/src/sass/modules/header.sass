@@ -26,14 +26,18 @@
       width: 100%
       padding-left: 15px
     &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
       &-title
         font-size: rem(31)
         font-weight: 700
-        margin-top: 18px
-        margin-bottom: 7px
+        margin-top: 20px
+        margin-bottom: 10px
       &-text
         font-size: rem(15)
         font-weight: 400
+        margin-bottom: 10px
       &-price
         &_new
           color: #ff0072
@@ -51,7 +55,7 @@
             height: 2px
             width: 62px
             background: #ff0072
-            top: 12px
+            top: 10px
             left: -4px
             position: absolute
             transform: rotateZ(7deg)
@@ -60,6 +64,7 @@
         justify-content: space-between
         margin-right: 8%
         align-items: center
+        margin-bottom: 10px
   &-second
     position: relative
     .btn
@@ -84,6 +89,9 @@
   padding-top: 9px
   line-height: 23.42px
   text-transform: uppercase
+  text-align: center
+  &:hover
+    color: #000
 
 .timer
   max-width: 282px
@@ -107,7 +115,7 @@
         align-items: center
         font-size: rem(55)
         font-weight: 700
-        letter-spacing: 12px
+        letter-spacing: 11px
         line-height: 61px
         padding-left: 7px
       &::before

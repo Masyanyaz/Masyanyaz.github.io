@@ -20,22 +20,22 @@
         <div class="banners-first-info">
           <h3 class="banners-first-info-title">Предзаказ тетради «Кубометрия 3D»</h3>
           <p class="banners-first-info-text">Акция заканчивается 14 апреля. Через:</p>
-          <div class="timer">
+          <div class="timer" id="app">
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">12</p>
+                <p class="timer-item-scoreboard-time">{{ theTime.hours }}</p>
               </div>
               <p class="timer-item-text">часов</p>
             </div>
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">34</p>
+                <p class="timer-item-scoreboard-time">{{ theTime.minutes }}</p>
               </div>
               <p class="timer-item-text">минут</p>
             </div>
             <div class="timer-item">
               <div class="timer-item-scoreboard">
-                <p class="timer-item-scoreboard-time">56</p>
+                <p class="timer-item-scoreboard-time">{{ theTime.seconds }}</p>
               </div>
               <p class="timer-item-text">секунд</p>
             </div>
@@ -57,7 +57,40 @@
       </div>
     </div>
   </div>
-<script type="text/javascript" src="./assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        deadline: new Date(2019, 5, 20).getTime(),
+        hours: '',
+        minutes: '',
+        seconds: ''
+      },
+      computed: {
+        theTime(){
+          setInterval(() => {
+            let nowTime = new Date().getTime(),
+              diff = this.deadline - nowTime,
+
+              thours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+              tminutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+              tseconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            this.hours = (thours < 10) ? '0' + thours : thours;
+            this.minutes = (tminutes < 10) ? '0' + tminutes : tminutes;
+            this.seconds = (tseconds < 10) ? '0' + tseconds : tseconds;
+          }, 1000);
+          return {
+            hours: this.hours,
+            minutes: this.minutes,
+            seconds: this.seconds
+          };
+        }
+      }
+    });
+  </script>
 </body>
 </html>
 

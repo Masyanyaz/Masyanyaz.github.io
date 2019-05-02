@@ -17,14 +17,18 @@
         height: 250px
       &-info
         &-price
+          &_new
+            margin-bottom: 6px
           &_old
             &::after
               width: 56px
               top: 10px
+  .banner-item
+    height: 265px
 
 @media screen and (max-width: 1024px)
   .banner-item
-    height: 265px
+    height: 240px
   .banners
     &-first
       &_img
@@ -32,6 +36,8 @@
         padding-left: 8px
       &-info
         &-price
+          &_new
+            margin-bottom: 0
           &_old
             &::after
               width: 46px
@@ -47,7 +53,7 @@
     width: 94px
     height: 40px
   .banner-item
-    height: 245px
+    height: 230px
   .banners
     &-first
       &_img
@@ -73,12 +79,13 @@
       margin-bottom: 30px
       &-info
         &-price
-          &_new
-            height: 15px
+          &_old
+            &::after
+              top: 5px
   .banner-item
-    width: 75%
-    max-width: 350px
-    height: 240px
+    width: 80%
+    max-width: 400px
+
 @media screen and (max-width: 480px)
   .banners
     &-first
@@ -86,14 +93,14 @@
         height: 166px
       &-info
         &-price
+          &_new
+            height: 22px
           &_old
             &::after
-              top: 7px
-              width: 38px
+              width: 36px
   .banner-item
-    height: 208px
+    height: 205px
   .timer
-    margin-bottom: -12px
     &-item
       &-scoreboard
         height: 48px
