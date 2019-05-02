@@ -72,11 +72,11 @@
         theTime(){
           setInterval(() => {
             let nowTime = new Date().getTime(),
-              diff = this.deadline - nowTime,
+                diff = this.deadline - nowTime,
 
-              thours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-              tminutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
-              tseconds = Math.floor((diff % (1000 * 60)) / 1000);
+                thours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                tminutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+                tseconds = Math.floor((diff % (1000 * 60)) / 1000);
 
             this.hours = (thours < 10) ? '0' + thours : thours;
             this.minutes = (tminutes < 10) ? '0' + tminutes : tminutes;
