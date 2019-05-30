@@ -3,14 +3,23 @@
 <head>
 	<title>Мой сайт</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		ul, li {
+		html {
+			font-size: 16px;
+		}
+
+		ul, li, body, html {
 			margin: 0;
 		}
+
+		img {
+			padding-right: 22px;
+
+		}
+
 		.content{
 			max-width: 660px;
-			width: 100%;
 		}
 
 		.content h3 {
@@ -23,7 +32,7 @@
 
 		.header {
 			display: flex;
-			padding: 7px 0 8px;
+			padding: 7px 0 10px;
 			flex-wrap: wrap;
 		}
 
@@ -38,19 +47,19 @@
 		.information {
 			display: flex;
 			justify-content: space-between;
-			padding: 0 22px 0 12px;
+			padding-left: 12px;
 			flex-wrap: wrap;
 		}
 
-		/*@media (min-width: 580px) {*/
-		/*	.information {*/
-		/*		flex*/
-		/*	}*/
+		@media screen and (max-width: 580px) {
+			img {
+				padding-left: 22px;
+			}
 		}
+
 	</style>
 </head>
 <body>
-
 <div class="content">
 	<div class="header">
 		<h3 style="padding: 0 23px 0 36px;">День 1</h3>
@@ -62,7 +71,7 @@
 				<li>Прибытие в Санкт-Петербург</li>
 				<li>Трансфер в центр города</li>
 				<li>Заселение в отель по вашему выбору:
-					<ul class="no-margin-bottom">
+					<ul>
 						<li>отель 3*</li>
 						<li>квартира</li>
 						<li>комната у жителя</li>
@@ -70,7 +79,7 @@
 				</li>
 			</ul>
 		</div>
-		<img width="250" alt="Saint-Pétersbourg" src="http://lati.me/images/photos/medium/article442.jpg" height="166" title="Saint-Pétersbourg" class="bordered fancy-image">
+		<img width="250" alt="Saint-Pétersbourg" src="http://lati.me/images/photos/medium/article442.jpg" height="166" title="Saint-Pétersbourg">
 	</div>
 </div>
 
