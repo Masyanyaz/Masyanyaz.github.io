@@ -1,6 +1,6 @@
 enum Data {
   title = 'Title',
-  subTitle = 'SubTitle',
+  subTitle = "Hello",
 }
 export default Data;
 export type DataType = typeof Data;
