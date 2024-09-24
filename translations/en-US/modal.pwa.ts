@@ -1,6 +1,6 @@
 enum Data {
   title = "Title duck",
-  subTitle = "Hello wow1 new sub",
+  subTitle = "Hello wow1",
   test = 'Test',
 }
 export default Data;
