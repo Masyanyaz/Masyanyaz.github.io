@@ -1,6 +1,6 @@
 enum Data {
-  title = 'Title',
-  subTitle = "subTitle",
+  title = "Заголовок",
+  subTitle = "Текст",
 }
 export default Data;
 export type DataType = typeof Data;
