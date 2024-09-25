@@ -1,5 +1,6 @@
 files:
   - source: /translations/en-001/*.ts
     translation: /translations/%locale%/%original_file_name%
+    ignore_regexp: 'import .*'
 bundles:
   - 4
