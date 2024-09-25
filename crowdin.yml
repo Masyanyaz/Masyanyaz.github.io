@@ -2,4 +2,4 @@ files:
   - source: /translations/en-001/*.ts
     translation: /translations/%locale%/%original_file_name%
 bundles:
-  - 2
+  - 4
