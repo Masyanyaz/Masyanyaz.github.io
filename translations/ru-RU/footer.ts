@@ -1,4 +1,6 @@
+// @crowdin:ignore
 import type { TranslationsReference } from "../en-001/footer";
+// @crowdin:ignore
 import type { DataType as Reference } from "../en-001/footer";
 enum Data {
   supportBanner_mainText = "Test",
