@@ -1,7 +1,9 @@
 import type { DataType as ModalAccounts } from './en-001/modal.pwa';
+import type { DataType as Footer } from './en-001/footer';
 
 export type Index = {
   'modal.pwa': ModalAccounts;
+  footer: Footer;
 };
 
 export const files = import.meta.glob('./*/*.ts');
