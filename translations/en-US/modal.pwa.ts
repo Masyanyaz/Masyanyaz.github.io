@@ -1,6 +1,6 @@
 enum Data {
   title = "Title duck",
-  subTitle = "Hello wow1",
+  subTitle = "Hello wow123",
   test = 'Test',
   test1 = 'Test',
 }
