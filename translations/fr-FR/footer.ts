@@ -1,11 +1,11 @@
 // @crowdin:ignore
-import type { TranslationsReference } from "../en-001/footer";
+import type { TranslationsReference } from "@frontend/utils/i18n";
 // @crowdin:ignore
 import type { DataType as Reference } from "../en-001/footer";
 enum Data {
-  supportBanner_mainText = "Test",
-  supportBanner_secondaryText = "Hello",
-  supportBanner_buttonText = "Contact support",
+  supportBanner_mainText = "Test fr",
+  supportBanner_secondaryText = "Hello fr",
+  supportBanner_buttonText = "Support fr",
   appSection_main = `{brand} for {type, select,
     ios {iOS}
     android {Android}
