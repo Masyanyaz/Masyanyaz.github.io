@@ -1,5 +1,5 @@
-import type { TranslationsReference } from "../en-001/footer";
-import type { DataType as Reference } from "../en-001/footer";
+import type { TranslationsReference } from "";
+import type { DataType as Reference } from "";
 enum Data {
   supportBanner_mainText = "Test",
   supportBanner_secondaryText = "Hello",
