@@ -6,6 +6,7 @@ enum Data {
   supportBanner_mainText = "Test",
   supportBanner_secondaryText = "Hello",
   supportBanner_buttonText = "Contact support",
+  test = "This test"
 
   appSection_main = `{brand} for {type, select,
     ios {iOS}
